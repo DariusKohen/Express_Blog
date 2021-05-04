@@ -11,7 +11,7 @@ const methodOverride = require('method-override')
 const app = express()
 
 // Init and connect DataBase
-mongoose.connect('mongodb://localhost/blog', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
