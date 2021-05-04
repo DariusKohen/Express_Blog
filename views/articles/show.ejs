@@ -1,5 +1,6 @@
 <h1 class="mb-1"><%= article.title %></h1>
 <div class="text-muted mb-2">
+  <!-- Display the 'createdAt' date object in an adapted way for the user based on where he is around the world -->
   <%= article.createdAt.toLocaleDateString() %>
 </div>
 <a href="/" class="btn btn-secondary">All Articles</a>

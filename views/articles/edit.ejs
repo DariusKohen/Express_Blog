@@ -1,5 +1,7 @@
 <h1 class="mb-4">Edit Article</h1>
 
+<!-- '?_medtod' is added here to be ineterpreted by the method-override middleware as PUT method is not available for forms -->
 <form action="/articles/<%= article.id %>?_method=PUT" method="POST">
+  <!-- EJS call for including the '_form_article' file here -->
   <%- include('_form_article') %>
 </form>
