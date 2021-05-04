@@ -44,4 +44,4 @@ app.get('/', async (req, res) => {
 app.use('/articles', articleRouter)
 
 // Make the server listen on port 3000
-app.listen(3000)
+app.listen(process.env.PORT || 3000)
